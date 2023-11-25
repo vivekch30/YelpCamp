@@ -41,7 +41,6 @@ module.exports.isAuthor = async (req, res, next) => {
     }
 }
 
-
 module.exports.isReviewAuthor = async (req, res, next) => {
     const { id, reviewId } = req.params;
     const review = await Review.findById(reviewId);
